@@ -1,0 +1,10 @@
+[Unit]
+Description=A Simple Calendar Server
+
+[Service]
+Type=forking
+TimeoutStartSec=10
+ExecStart=/usr/bin/radicale
+
+[Install]
+WantedBy=multi-user.target
